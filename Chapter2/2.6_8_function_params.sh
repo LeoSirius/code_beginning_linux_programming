@@ -1,6 +1,6 @@
 #/bin/bash
 
-# 函数内部的$开头的参数变量是local的，不同于整个脚本的参数变量
+# 函数内部的$开头的参数变量是函数local的，不同于整个脚本的参数变量
 
 yes_or_no () {
     echo "Is your name $* ?"  # 这里已$*其实就是整个脚本的$1参数
@@ -26,14 +26,6 @@ else
 fi
 exit 0
 
-
-# leo@ubuntu:~/c_test$ ./t.sh leo sirius
-# Original parameters are leo sirius
-# Is your name leo ?
-# Enter yes or no: e
-# Answer yes or no
-# Enter yes or no: n
-# Never mind
 # leo@ubuntu:~/c_test$ ./t.sh leo sirius
 # Original parameters are leo sirius
 # Is your name leo ?
