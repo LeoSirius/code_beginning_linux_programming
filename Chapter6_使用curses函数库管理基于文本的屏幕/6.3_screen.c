@@ -1,3 +1,8 @@
+/*
+ * NOTES:
+ * 注意编译需要-lcurses
+ */
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
