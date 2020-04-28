@@ -8,6 +8,12 @@
  * 进程就可以采用指针的方式读写操作这一块内存，而系统会自动回写脏页面到对应的文件磁盘上，
  * 即完成了对文件的操作而不必调用read，write等系统调用函数，相反，内核空间堆这段区域的修改也直接反应到用户空间，
  * 从而可以实现不同进程间的文件共享。
+ * 
+ * 例如，data.txt中原来的内容是
+ * abcdefghijklmnopqrstuvwxyz
+ * 
+ * 程序执行后，变成
+ * abcdefghijklmnopqrst9vwxyz
  */
 
 #include <sys/mman.h>
