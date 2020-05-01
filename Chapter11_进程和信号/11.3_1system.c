@@ -1,6 +1,6 @@
 /*
  * NOTES:
- * system可以启动一个新的进程。system用shell来启动要执行的命令
+ * system可以启动一个新的进程。system是用shell来启动要执行的命令
  */
 
 #include <stdlib.h>

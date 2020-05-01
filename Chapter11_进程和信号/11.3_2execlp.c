@@ -1,6 +1,6 @@
 /*
  * NOTES:
- * exec函数是替换进程映像
+ * exec函数是替换进程映像，即原有的实行的a.out进程被替换成了我们要执行的新的进程
  */
 
 #include <unistd.h>
