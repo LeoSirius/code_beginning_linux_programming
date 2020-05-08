@@ -3,6 +3,7 @@
  * 生产者向fifo中写10mb字节，消费者读取10mb。
  * 如果fifo空，read默认会阻塞。
  */
+
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
