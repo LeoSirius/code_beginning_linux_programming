@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     int opt;
 
     /* optstr f后面的冒号表示f选项需要一个参数。在没有为f提供选项时，返回？，
-     * 如果最前面后冒号，则在没有为f提供选项时，返回：
+     * 如果最前面有冒号，则在没有为f提供选项时，返回：
      */
     while ((opt = getopt(argc, argv, ":if:lr")) != -1) {
         switch (opt) {
