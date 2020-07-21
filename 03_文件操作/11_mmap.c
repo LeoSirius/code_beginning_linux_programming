@@ -45,8 +45,6 @@ int main(int argc, char **argv)
         perror("mmap");
     close(fd);
 
-    printf("%s", mapped);
-
     /* 修改一个字符，并同步到磁盘文件 */
     mapped[20] = '9';
     if ((msync((void *)mapped, sb.st_size, MS_SYNC)) == -1)

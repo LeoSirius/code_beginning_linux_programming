@@ -1,3 +1,9 @@
+/*
+ * NOTES:
+ * open和fopen的区别，参考：
+ * https://stackoverflow.com/questions/1658476/c-fopen-vs-open
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
